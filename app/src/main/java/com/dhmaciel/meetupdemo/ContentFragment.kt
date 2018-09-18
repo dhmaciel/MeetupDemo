@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_content.*
 
 
@@ -24,7 +25,13 @@ class ContentFragment : Fragment() {
         val login = ContentFragmentArgs.fromBundle(arguments).contentLoginArgs
         val password = ContentFragmentArgs.fromBundle(arguments).contentPassArgs
 
-        edit_text_safe_args_login.setText(login)
-        edit_text_safe_args_pass.setText(password)
+        edit_text_safe_args_login.text = login
+        edit_text_safe_args_pass.text = password
+
+        buttonToBottomBar.setOnClickListener{
+            Navigation.findNavController(activity!!,R.id.fragment_nav_host)
+                    .navigate(R.id.action_contentFragment_to_bottomBarActivity)
+
+        }
     }
 }

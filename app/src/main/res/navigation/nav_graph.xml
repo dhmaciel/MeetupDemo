@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_loginFragment_to_passwordFragment"
             app:destination="@id/passwordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_passwordFragment2"
+            app:destination="@id/passwordFragment" />
     </fragment>
     <fragment
         android:id="@+id/passwordFragment"
@@ -38,5 +41,13 @@
         <argument
             android:name="content_pass_args"
             app:argType="string" />
+        <action
+            android:id="@+id/action_contentFragment_to_bottomBarActivity"
+            app:destination="@id/bottomBarActivity" />
     </fragment>
+    <activity
+        android:id="@+id/bottomBarActivity"
+        android:name="com.dhmaciel.meetupdemo.BottomBarActivity"
+        android:label="activity_bottom_bar"
+        tools:layout="@layout/activity_bottom_bar" />
 </navigation>

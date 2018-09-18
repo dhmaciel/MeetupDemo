@@ -12,9 +12,11 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/padding_default">
+        android:layout_marginTop="@dimen/padding_default"
+        android:layout_marginLeft="@dimen/padding_default"
+        android:layout_marginRight="@dimen/padding_default">
 
-        <EditText
+        <TextView
             android:id="@+id/edit_text_safe_args_login"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -29,7 +31,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
+        <TextView
             android:id="@+id/edit_text_safe_args_pass"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -42,6 +44,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edit_text_safe_args_login" />
+
+        <Button
+            android:id="@+id/buttonToBottomBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="Bottom Bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edit_text_safe_args_pass" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

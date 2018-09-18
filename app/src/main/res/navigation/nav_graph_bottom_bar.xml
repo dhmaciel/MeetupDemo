@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_bottom_bar"
+    app:startDestination="@id/navigation_blue">
+
+    <fragment
+        android:id="@+id/navigation_blue"
+        android:name="com.dhmaciel.meetupdemo.BlueFragment"
+        android:label="fragment_blue"
+        tools:layout="@layout/fragment_blue" />
+    <fragment
+        android:id="@+id/navigation_red"
+        android:name="com.dhmaciel.meetupdemo.RedFragment"
+        android:label="fragment_red"
+        tools:layout="@layout/fragment_red" />
+    <fragment
+        android:id="@+id/navigation_yellow"
+        android:name="com.dhmaciel.meetupdemo.YellowFragment"
+        android:label="fragment_yellow"
+        tools:layout="@layout/fragment_yellow" />
+</navigation>

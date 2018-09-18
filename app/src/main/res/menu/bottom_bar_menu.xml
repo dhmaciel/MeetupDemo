@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_blue"
+        android:icon="@drawable/ic_beach_access_black_24dp"
+        android:title="Azul" />
+    <item
+        android:id="@+id/navigation_red"
+        android:icon="@drawable/ic_brightness_2_black_24dp"
+        android:title="Vermelho" />
+    <item
+        android:id="@+id/navigation_yellow"
+        android:icon="@drawable/ic_brightness_7_black_24dp"
+        android:title="Amarelo" />
+
+</menu>
